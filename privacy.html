@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tase — Privacy Policy</title>
+<style>
+  :root{--bg:#F2F3F5;--text:#111418;--muted:#5B6470;--line:#D5D9E0;--accent:#B8650A}
+  @media (prefers-color-scheme: dark){:root{--bg:#0F1216;--text:#E8ECF1;--muted:#8B95A3;--line:#262C35;--accent:#F5A623}}
+  body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  main{max-width:720px;margin:0 auto;padding:48px 20px 80px}
+  h1{font-size:28px;margin:0 0 4px} .meta{color:var(--muted);font-size:14px;margin-bottom:32px}
+  h2{font-size:18px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+  table{border-collapse:collapse;width:100%;font-size:15px} td,th{text-align:left;vertical-align:top;padding:8px 10px 8px 0;border-bottom:1px solid var(--line)}
+  th{color:var(--muted);font-weight:500}
+  a{color:var(--accent)} code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px}
+</style>
+</head>
+<body>
+<main>
+<h1>Tase — Privacy Policy</h1>
+<div class="meta">App: <strong>Tase — Sound Meter &amp; Tools</strong> (Android, package <code>io.github.alexest.tase</code>) · Effective date: 17.10.2026 · Last updated: 17.10.2026</div>
+
+<p>Tase is a measuring app that uses your phone's microphone, accelerometer and ambient light sensor to show sound level, vibration and illuminance, and lets you keep a journal of recordings on your device. This policy explains what data the app handles, what stays on your device, and what the third-party services it includes may collect.</p>
+
+<h2>1. Summary</h2>
+<ul>
+  <li>Tase has no account, no sign-up and no server of its own. Your measurements, notes, photos and locations are stored <strong>only on your device</strong> and are never uploaded by the app.</li>
+  <li>The microphone is used to compute sound levels in real time. <strong>Audio is never recorded, stored or transmitted.</strong></li>
+  <li>Location is used only if you turn on "Add location" for journal entries, and only to attach coordinates to a recording on your device.</li>
+  <li>The app shows banner advertising through Google AdMob and offers one in-app purchase through Google Play Billing. These Google services process some device data as described below.</li>
+  <li>The app contains no analytics or crash-reporting SDK of its own.</li>
+</ul>
+
+<h2>2. Data processed on your device</h2>
+<table>
+<tr><th>Data</th><th>Why</th><th>Where it goes</th></tr>
+<tr><td>Microphone audio stream</td><td>To calculate the sound level (dB) while the sound meter screen is open</td><td>Processed in memory only; discarded immediately. Never saved, never sent.</td></tr>
+<tr><td>Accelerometer and light-sensor readings</td><td>Vibration and illuminance measurements; optional automatic theme switching by ambient light</td><td>Processed in memory; saved only when you press "Start recording"</td></tr>
+<tr><td>Recordings (value series, statistics, timestamps, sensor and calibration details)</td><td>Your journal</td><td>App-private storage on your device</td></tr>
+<tr><td>Notes and tags you type</td><td>Your journal</td><td>App-private storage on your device</td></tr>
+<tr><td>Photos you attach</td><td>Your journal</td><td>Taken with your system camera app or chosen from your gallery; a copy is kept in the app's private storage. Tase does not request the camera permission.</td></tr>
+<tr><td>Location (latitude, longitude, accuracy)</td><td>Only if you enable "Add location"; attached to the recording you save</td><td>App-private storage on your device. Not transmitted.</td></tr>
+<tr><td>Settings (theme, units, calibration offsets)</td><td>App preferences</td><td>App-private storage on your device</td></tr>
+</table>
+<p>Exports (CSV, PDF) are created only when you ask for them and are handed to the app or location you choose (a file manager, email, a cloud folder). What happens after that is governed by that other app's policy.</p>
+<p>Deleting a recording in the journal deletes its series, photo and location. Uninstalling the app deletes all app-private data.</p>
+
+<h2>3. Permissions</h2>
+<table>
+<tr><th>Permission</th><th>Use</th></tr>
+<tr><td>Microphone (<code>RECORD_AUDIO</code>)</td><td>Sound meter only. Requested the first time you open the sound meter. Audio is not recorded.</td></tr>
+<tr><td>Location (<code>ACCESS_COARSE_LOCATION</code>, <code>ACCESS_FINE_LOCATION</code>)</td><td>Only when you turn on "Add location" in journal settings. Optional.</td></tr>
+<tr><td>High sampling rate sensors (<code>HIGH_SAMPLING_RATE_SENSORS</code>)</td><td>Lets the vibration meter read the accelerometer faster than 200 Hz on Android 12+. No user data involved.</td></tr>
+<tr><td>Internet, network state</td><td>Used only by Google AdMob (ads) and Google Play Billing (purchase). Tase itself makes no network requests.</td></tr>
+<tr><td>Vibrate</td><td>Optional haptic feedback on buttons.</td></tr>
+</table>
+<p>Tase does not request camera, storage, contacts, phone or background-location permissions and runs no background services.</p>
+
+<h2>4. Third-party services</h2>
+<p><strong>Google AdMob (advertising).</strong> The free version shows a banner ad. The Google Mobile Ads SDK may collect device identifiers (such as the advertising ID), approximate location derived from IP address, and information about ad interactions, as described in <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and <a href="https://support.google.com/admob/answer/6128543">AdMob's data practices</a>. In the European Economic Area, the UK and Switzerland you are asked for consent before any ad is loaded; you can change your choice at any time under <em>Settings → Ad privacy settings</em>. You can also reset or delete your advertising ID in your device's Google settings. Buying "Remove ads" stops the ads SDK from loading ads.</p>
+<p><strong>Google Play Billing (purchase).</strong> The one-time "Remove ads" purchase is processed by Google Play. Tase receives only a purchase token confirming the purchase; it never sees your payment details. See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+<p>No other SDKs, analytics, crash reporters or tracking tools are included.</p>
+
+<h2>5. Data sharing and sale</h2>
+<p>Tase does not sell, share or transfer your measurements, notes, photos or locations to anyone. The only data leaving your device is what the Google services above collect for ads and billing, under their own policies.</p>
+
+<h2>6. Data retention</h2>
+<p>Everything the app stores stays on your device until you delete it in the app or uninstall the app. The developer has no copy and cannot access, restore or delete it for you.</p>
+
+<h2>7. Children</h2>
+<p>Tase is a general-purpose utility and is not directed at children under 13 (or the applicable age in your country). We do not knowingly collect personal data from children.</p>
+
+<h2>8. Security</h2>
+<p>App data is kept in Android app-private storage, which other apps cannot read. Connections made by the Google services are encrypted (HTTPS).</p>
+
+<h2>9. Your rights</h2>
+<p>Because Tase keeps your data only on your device, you exercise your rights directly: view, export (CSV/PDF), edit or delete any recording in the app. For data processed by Google (ads, billing), use your Google account and device settings, or contact Google. If you are in the EEA/UK and have questions about this policy, contact the developer at the address below.</p>
+
+<h2>10. Changes</h2>
+<p>If this policy changes, the new version will be published at this address with an updated date. Material changes will also be noted in the app's release notes.</p>
+
+<h2>11. Contact</h2>
+<p>Developer: Alexander Chelpanov, Estonia<br>Email: <a href="mailto:alexander.chelpanov@proton.me">alexander.chelpanov@proton.me</a></p>
+
+<p class="meta" style="margin-top:40px">Measurements made with a smartphone are indicative and are not a substitute for a certified measuring instrument.</p>
+</main>
+</body>
+</html>
